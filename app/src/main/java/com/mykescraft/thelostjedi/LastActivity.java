@@ -25,8 +25,8 @@ public class LastActivity extends AppCompatActivity {
         if (extras!=null) {
             goodAnswer = extras.getInt("adom");
             TextView percent = (TextView)findViewById(R.id.percent);
-            percent.setTypeface(myTypeFace);
-            percent.setText("" + ((goodAnswer/7)*100) + "%");
+            double result = goodAnswer/7*100;
+            percent.setText("" + result + "%");
         }
 
 

@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 public class SecondQuestion extends AppCompatActivity {
     int goodAnswer;
+    int lukeLightSaberCheckedCount = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,11 +42,9 @@ public class SecondQuestion extends AppCompatActivity {
         RadioButton blue = (RadioButton)findViewById(R.id.blue);
         RadioButton red = (RadioButton)findViewById(R.id.red);
         RadioButton green = (RadioButton)findViewById(R.id.green);
-        int lukeLightSaberCheckedCount = 0;
-        if (green.isChecked()) {
 
-            ++lukeLightSaberCheckedCount;
-           if(lukeLightSaberCheckedCount==1)
+        if (green.isChecked()) {
+           if(lukeLightSaberCheckedCount==0)
                 goodAnswer++;
             nextToThirdQuestion(v, "adom", goodAnswer);
 
@@ -56,6 +55,7 @@ public class SecondQuestion extends AppCompatActivity {
             blue.setChecked(false);
             red.setChecked(false);
             green.setChecked(false);
+            lukeLightSaberCheckedCount++;
         }
 
     }

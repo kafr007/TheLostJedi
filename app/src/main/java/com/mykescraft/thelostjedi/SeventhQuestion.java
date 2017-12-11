@@ -16,6 +16,7 @@ import android.widget.Toast;
 
 public class SeventhQuestion extends AppCompatActivity {
     int goodAnswer;
+    int allCheckedCount = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,11 +53,9 @@ public class SeventhQuestion extends AppCompatActivity {
         CheckBox leftLeg = (CheckBox)findViewById(R.id.left_leg);
         CheckBox rightLeg = (CheckBox)findViewById(R.id.right_leg);
 
-        int allCheckedCount = 0;
-        if (head.isChecked() && leftArm.isChecked() && rightArm.isChecked() && back.isChecked() && leftLeg.isChecked() && rightLeg.isChecked()) {
 
-            ++allCheckedCount;
-            if(allCheckedCount==1)
+        if (head.isChecked() && leftArm.isChecked() && rightArm.isChecked() && back.isChecked() && leftLeg.isChecked() && rightLeg.isChecked()) {
+            if(allCheckedCount==0)
                 goodAnswer++;
             nextToLastView(v, "adom", goodAnswer);
 
@@ -70,6 +69,7 @@ public class SeventhQuestion extends AppCompatActivity {
             back.setChecked(false);
             leftLeg.setChecked(false);
             rightLeg.setChecked(false);
+            allCheckedCount++;
         }
 
     }

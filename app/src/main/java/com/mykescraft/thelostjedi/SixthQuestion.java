@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 public class SixthQuestion extends AppCompatActivity {
     int goodAnswer;
+    int kitFistoCheckedCount = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,14 +42,11 @@ public class SixthQuestion extends AppCompatActivity {
         RadioButton kitFisto = (RadioButton)findViewById(R.id.kit_fisto);
         RadioButton maceWindu = (RadioButton)findViewById(R.id.mace_windu);
         RadioButton ploKoon = (RadioButton)findViewById(R.id.plo_koon);
-        int kitFistoCheckedCount = 0;
-        if (kitFisto.isChecked()) {
 
-            ++kitFistoCheckedCount;
-            if(kitFistoCheckedCount==1)
+        if (kitFisto.isChecked()) {
+            if(kitFistoCheckedCount==0)
                 goodAnswer++;
             nextToSeventhQuestion(v, "adom", goodAnswer);
-
 
         }
         else {
@@ -56,6 +54,7 @@ public class SixthQuestion extends AppCompatActivity {
             kitFisto.setChecked(false);
             maceWindu.setChecked(false);
             ploKoon.setChecked(false);
+            kitFistoCheckedCount++;
         }
 
     }

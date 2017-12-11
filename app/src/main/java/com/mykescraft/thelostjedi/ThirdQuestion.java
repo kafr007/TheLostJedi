@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 public class ThirdQuestion extends AppCompatActivity {
     int goodAnswer;
+    int chrystalCheckedCount = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,11 +42,9 @@ public class ThirdQuestion extends AppCompatActivity {
         RadioButton focusingLens = (RadioButton)findViewById(R.id.focusing_lens);
         RadioButton chrystal = (RadioButton)findViewById(R.id.chrystal);
         RadioButton energyCell = (RadioButton)findViewById(R.id.energy_cell);
-        int chrystalCheckedCount = 0;
-        if (chrystal.isChecked()) {
 
-            ++chrystalCheckedCount;
-            if(chrystalCheckedCount==1)
+        if (chrystal.isChecked()) {
+            if(chrystalCheckedCount==0)
                 goodAnswer++;
             nextToFourthQuestion(v, "adom", goodAnswer);
 
@@ -55,6 +54,7 @@ public class ThirdQuestion extends AppCompatActivity {
             focusingLens.setChecked(false);
             chrystal.setChecked(false);
             energyCell.setChecked(false);
+            chrystalCheckedCount++;
         }
 
     }

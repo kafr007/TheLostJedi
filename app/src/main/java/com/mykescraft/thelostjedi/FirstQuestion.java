@@ -12,7 +12,8 @@ import android.widget.Toast;
 import java.io.Console;
 
 public class FirstQuestion extends AppCompatActivity {
-    public int goodAnswerFirst;
+    public int goodAnswer;
+    int jediKnightCheckedCount = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,14 +40,12 @@ public class FirstQuestion extends AppCompatActivity {
         RadioButton jediKnight = (RadioButton)findViewById(R.id.jedi_knight);
         RadioButton jediConsular = (RadioButton)findViewById(R.id.jedi_consular);
         RadioButton jediSentinel = (RadioButton)findViewById(R.id.jedi_sentinel);
-        int jediKnightCheckedCount = 0;
+
         if (jediKnight.isChecked()) {
-            ++jediKnightCheckedCount;
-            if(jediKnightCheckedCount==1)
-                goodAnswerFirst++;
-
-            nextToSecondQuestion(v, "adom", goodAnswerFirst);
-
+            if(jediKnightCheckedCount==0) {
+                goodAnswer++;
+            }
+            nextToSecondQuestion(v, "adom", goodAnswer);
         }
 
         else {
@@ -54,6 +53,7 @@ public class FirstQuestion extends AppCompatActivity {
             jediConsular.setChecked(false);
             jediKnight.setChecked(false);
             jediSentinel.setChecked(false);
+            jediKnightCheckedCount++;
         }
 
     }

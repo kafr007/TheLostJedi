@@ -15,6 +15,7 @@ import android.widget.Toast;
 
 public class FourthQuestion extends AppCompatActivity {
     int goodAnswer;
+    int shiiChoCheckedCount = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,11 +42,9 @@ public class FourthQuestion extends AppCompatActivity {
         RadioButton ataru = (RadioButton)findViewById(R.id.ataru);
         RadioButton shiiCho = (RadioButton)findViewById(R.id.shii_cho);
         RadioButton makashi = (RadioButton)findViewById(R.id.makashi);
-        int shiiChoCheckedCount = 0;
-        if (shiiCho.isChecked()) {
 
-            ++shiiChoCheckedCount;
-            if(shiiChoCheckedCount==1)
+        if (shiiCho.isChecked()) {
+           if(shiiChoCheckedCount==0)
                     goodAnswer++;
             nextToFifthQuestion(v, "adom", goodAnswer);
 
@@ -56,6 +55,7 @@ public class FourthQuestion extends AppCompatActivity {
             ataru.setChecked(false);
             shiiCho.setChecked(false);
             makashi.setChecked(false);
+            shiiChoCheckedCount++;
         }
 
     }
