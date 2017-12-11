@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.mykescraft.thelostjedi.FifthQuestion"
+    android:orientation="vertical"
+    android:background="#757575">
+
+    <TextView
+        android:id="@+id/fifth_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fifth_question"
+        android:textColor="#FFFF8D"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/deathstar"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:src="@drawable/lightsabers_combat_forms"/>
+
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+        <RadioButton
+            android:id="@+id/five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/five"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/deathstar"
+
+            />
+
+        <RadioButton
+            android:id="@+id/seven"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/seven"
+            android:textColor="#000000"
+            android:layout_marginBottom="8dp"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/deathstar"
+            />
+
+        <RadioButton
+            android:id="@+id/nine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nine"
+            android:textColor="#000000"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/deathstar"
+
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="#01579B"
+        android:textColor="#FFFF8D"
+        android:onClick="rightFifthQuestion"
+        android:fontFamily="@font/deathstar"
+        />
+
+</LinearLayout>

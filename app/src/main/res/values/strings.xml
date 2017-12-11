@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">TheLostJedi</string>
+    <string name="ok">Ok</string>
+    <string name="introduction">Hello Jedi Padawan!\nYou\'ve lost in a dark forest. You have to answer 7 questions correctly, and you will find the way out of the forest. Let\'s start it!\nMay the force be with you! </string>
+    <string name="first_question">Which Jedi cast uses blue lightsaber?</string>
+    <string name="jedi_sentinel">Jedi sentinel</string>
+    <string name="jedi_knights">Jedi knight</string>
+    <string name="jedi_consular">Jedi consular</string>
+    <string name="next">Next</string>
+    <string name="name_hint">Please, enter your name</string>
+    <string name="second_question">What colour is LukeSkywalker\'s lightsaber?</string>
+    <string name="blue">Blue</string>
+    <string name="red">Red</string>
+    <string name="green">Green</string>
+    <string name="third_question">What gives the colour of a lightsaber blade?</string>
+    <string name="focusing_lens">Focusing lens</string>
+    <string name="chrystal">Chrystal</string>
+    <string name="energy_cell">Energy cell capacity</string>
+    <string name="fourth_question">Which is the first lightsaber combat form, what every Jedi has to learn?</string>
+    <string name="ataru">Ataru</string>
+    <string name="shii_cho">Shii-Cho</string>
+    <string name="makashi">Makashi</string>
+    <string name="fifth_question">How many lightsaber combat form exists?</string>
+    <string name="five">5</string>
+    <string name="seven">7</string>
+    <string name="nine">9</string>
+    <string name="sixth_question">Which Jedi Master uses the first form?</string>
+    <string name="kit_fisto">Kit Fisto</string>
+    <string name="mace_windu">Mace Windu</string>
+    <string name="plo_koon">Plo Koon</string>
+    <string name="seventh_question">Which are the attack zones in Shii-Cho?</string>
+    <string name="head">Head</string>
+    <string name="right_arm">Right arm and side</string>
+    <string name="left_arm">Left arm and side</string>
+    <string name="back">Back</string>
+    <string name="right_leg">Right leg</string>
+    <string name="left_leg">Left leg</string>
+    <string name="restart">Restart</string>
+    <string name="quit">Quit</string>
+    <string name="result">Congratulations! You\'ve found the way out of the forest. Your result (right answer = if you choose the right answer first) is:</string>
+    <string name="percent">0%</string>
+
+</resources>

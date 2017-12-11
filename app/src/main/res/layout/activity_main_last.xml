@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.mykescraft.thelostjedi.LastActivity"
+    android:orientation="vertical"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/seventh_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result"
+        android:textColor="#2E7D32"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/deathstar"
+        />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/percent"
+        android:textColor="#2E7D32"
+        android:layout_marginTop="16dp"
+        android:textSize="32sp"
+        android:fontFamily="@font/deathstar"
+        android:gravity="center_horizontal"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:src="@drawable/lightsabers_combat_forms"/>
+
+
+
+
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/button_restart"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/restart"
+        android:background="#01579B"
+        android:textColor="#FFFF8D"
+        android:onClick="restart"
+        android:fontFamily="@font/deathstar"
+        />
+
+
+
+</LinearLayout>

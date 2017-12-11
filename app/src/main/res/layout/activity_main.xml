@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.mykescraft.thelostjedi.MainActivity"
+    android:orientation="vertical"
+    android:background="#000000">
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/name_hint"
+        android:textColorHint="#FFFF8D"
+        android:textColor="#FFFF8D"
+        android:inputType="textCapWords"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/deathstar"
+        />
+
+    <Button
+        android:id="@+id/button_ok"
+        android:layout_marginTop="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ok"
+        android:background="#01579B"
+        android:textColor="#FFFF8D"
+        android:onClick="ok"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/deathstar"
+        />
+
+    <TextView
+        android:id="@+id/introduction"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="@string/introduction"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:fontFamily="@font/deathstar"
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:src="@drawable/myke_s_craft_black_lightsaber"/>
+
+
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="#01579B"
+        android:textColor="#FFFF8D"
+        android:onClick="nextToFirstQuestion"
+        android:fontFamily="@font/deathstar"
+
+        />
+
+</LinearLayout>

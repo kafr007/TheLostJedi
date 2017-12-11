@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.mykescraft.thelostjedi.SeventhQuestion"
+    android:orientation="vertical"
+    android:background="#BDBDBD">
+
+    <TextView
+        android:id="@+id/seventh_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seventh_question"
+        android:textColor="#FFFF8D"
+        android:layout_marginBottom="8dp"
+        android:textSize="18sp"
+        android:fontFamily="@font/deathstar"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:src="@drawable/attack_zones"/>
+
+
+    <CheckBox
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/head"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:fontFamily="@font/deathstar"
+        />
+
+    <CheckBox
+        android:id="@+id/right_arm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/right_arm"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:fontFamily="@font/deathstar"
+        />
+
+    <CheckBox
+        android:id="@+id/left_arm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/left_arm"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:fontFamily="@font/deathstar"
+        />
+    <CheckBox
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/back"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:fontFamily="@font/deathstar"
+        />
+
+    <CheckBox
+        android:id="@+id/right_leg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/right_leg"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:fontFamily="@font/deathstar"
+        />
+
+    <CheckBox
+        android:id="@+id/left_leg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/left_leg"
+        android:layout_marginBottom="8dp"
+        android:background="#FFFFFF"
+        android:textColor="#000000"
+        android:fontFamily="@font/deathstar"
+        />
+
+
+    <Button
+        android:id="@+id/button_next"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:background="#01579B"
+        android:textColor="#FFFF8D"
+        android:onClick="rightSeventhQuestion"
+        android:fontFamily="@font/deathstar"
+        />
+
+</LinearLayout>
