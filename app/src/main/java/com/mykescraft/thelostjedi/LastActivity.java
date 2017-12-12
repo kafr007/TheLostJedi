@@ -30,8 +30,8 @@ public class LastActivity extends AppCompatActivity {
             goodAnswer = extras.getInt("adom");
             TextView percent = (TextView)findViewById(R.id.percent);
             double result = goodAnswer/7.0*100.0;
-            String result1 = String.format("%2f", result);
-            percent.setText("" + result1 + "%");
+
+            percent.setText("" + (int)result + "%");
 
             if (result>=0)
                 setTextEvaluation("My Padawan, I see you tried it, but you have to practice lot more to become a Jedi Master one day.", "red");
