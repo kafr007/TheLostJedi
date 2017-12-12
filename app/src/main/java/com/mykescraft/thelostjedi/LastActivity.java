@@ -3,6 +3,7 @@ package com.mykescraft.thelostjedi;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -53,6 +54,15 @@ public class LastActivity extends AppCompatActivity {
 
         Button restart = (Button)findViewById(R.id.button_restart);
         restart.setTypeface(myTypeFace);
+
+        TextView mykesCraft = (TextView)findViewById(R.id.mykescraft);
+        mykesCraft.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browser = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/Mykes-Craft-492778114434577/"));
+                startActivity(browser);
+            }
+        });
 
 
 

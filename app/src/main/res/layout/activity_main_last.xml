@@ -87,6 +87,7 @@
         android:textSize="10sp"
         android:fontFamily="@font/deathstar"
         android:gravity="center_horizontal"
+        android:autoLink="web"
         />
 
 
