@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -14,8 +15,10 @@ import android.widget.Toast;
  */
 
 public class SixthQuestion extends AppCompatActivity {
-    int goodAnswer;
-    int kitFistoCheckedCount = 0;
+
+    private int goodAnswer;
+    private int kitFistoCheckedCount = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -46,6 +49,7 @@ public class SixthQuestion extends AppCompatActivity {
         if (kitFisto.isChecked()) {
             if(kitFistoCheckedCount==0)
                 goodAnswer++;
+
             nextToSeventhQuestion(v, "adom", goodAnswer);
 
         }

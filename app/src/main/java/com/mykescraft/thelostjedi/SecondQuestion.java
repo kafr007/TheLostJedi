@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
@@ -14,8 +15,10 @@ import android.widget.Toast;
  */
 
 public class SecondQuestion extends AppCompatActivity {
-    int goodAnswer;
-    int lukeLightSaberCheckedCount = 0;
+
+    private int goodAnswer;
+    private int lukeLightSaberCheckedCount = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +27,7 @@ public class SecondQuestion extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras!=null)
             goodAnswer = extras.getInt("adom");
+
 
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),
                 "font/deathstar.otf");
@@ -44,8 +48,10 @@ public class SecondQuestion extends AppCompatActivity {
         RadioButton green = (RadioButton)findViewById(R.id.green);
 
         if (green.isChecked()) {
-           if(lukeLightSaberCheckedCount==0)
+           if(lukeLightSaberCheckedCount==0){
                 goodAnswer++;
+
+           }
             nextToThirdQuestion(v, "adom", goodAnswer);
 
 

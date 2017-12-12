@@ -1,7 +1,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">TheLostJedi</string>
     <string name="ok">Ok</string>
-    <string name="introduction">Hello Jedi Padawan!\nYou\'ve lost in a dark forest. You have to answer 7 questions correctly, and you will find the way out of the forest. Let\'s start it!\nMay the force be with you! </string>
+    <string name="introduction">Hello Jedi Padawan!\nYou\'ve lost in a dark forest. You have to answer 7 questions correctly, and you will find the way out of the forest. \nYou\'re Master will evaluate your performance. It is a good answer, if you give it for the first time. \nLet\'s start it!\nMay the force be with you! </string>
     <string name="first_question">Which Jedi cast uses blue lightsaber?</string>
     <string name="jedi_sentinel">Jedi sentinel</string>
     <string name="jedi_knights">Jedi knight</string>
@@ -37,7 +37,8 @@
     <string name="left_leg">Left leg</string>
     <string name="restart">Restart</string>
     <string name="quit">Quit</string>
-    <string name="result">Congratulations! You\'ve found the way out of the forest. Your result (right answer = if you choose the right answer first) is:</string>
+    <string name="result">Congratulations! You\'ve found the way out of the forest. \nYour result:</string>
+    <string name="master">Dear Padawan!</string>
     <string name="percent">0%</string>
 
 </resources>
