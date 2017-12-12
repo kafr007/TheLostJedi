@@ -15,7 +15,6 @@ import android.widget.Toast;
  */
 
 public class FifthQuestion extends AppCompatActivity {
-
     private int goodAnswer;
     private int sevenCheckedCount = 0;
 
@@ -27,7 +26,7 @@ public class FifthQuestion extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras!=null)
             goodAnswer = extras.getInt("adom");
-
+        //set fonttype
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),
                 "font/deathstar.otf");
         RadioButton five = (RadioButton)findViewById(R.id.five);
@@ -38,18 +37,15 @@ public class FifthQuestion extends AppCompatActivity {
         nine.setTypeface(myTypeFace);
         Button next = (Button)findViewById(R.id.button_next);
         next.setTypeface(myTypeFace);
-
     }
 
     public void rightFifthQuestion(View v) {
         RadioButton five = (RadioButton)findViewById(R.id.five);
         RadioButton seven = (RadioButton)findViewById(R.id.seven);
         RadioButton nine = (RadioButton)findViewById(R.id.nine);
-
         if (seven.isChecked()) {
             if(sevenCheckedCount==0)
                 goodAnswer++;
-
             nextToSixthQuestion(v, "adom", goodAnswer);
         }
         else {
@@ -59,7 +55,6 @@ public class FifthQuestion extends AppCompatActivity {
             nine.setChecked(false);
             sevenCheckedCount++;
         }
-
     }
 
     private void nextToSixthQuestion(View v, String name, int value) {

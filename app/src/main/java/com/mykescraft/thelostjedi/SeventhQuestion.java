@@ -16,7 +16,6 @@ import android.widget.Toast;
  */
 
 public class SeventhQuestion extends AppCompatActivity {
-
     private int goodAnswer;
     private int allCheckedCount = 0;
 
@@ -28,7 +27,7 @@ public class SeventhQuestion extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras!=null)
             goodAnswer = extras.getInt("adom");
-
+        //set fonttype
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),
                 "font/deathstar.otf");
         CheckBox head = (CheckBox)findViewById(R.id.head);
@@ -45,7 +44,6 @@ public class SeventhQuestion extends AppCompatActivity {
         rightLeg.setTypeface(myTypeFace);
         Button next = (Button)findViewById(R.id.button_next);
         next.setTypeface(myTypeFace);
-
     }
 
     public void rightSeventhQuestion(View v) {
@@ -55,15 +53,10 @@ public class SeventhQuestion extends AppCompatActivity {
         CheckBox back = (CheckBox)findViewById(R.id.back);
         CheckBox leftLeg = (CheckBox)findViewById(R.id.left_leg);
         CheckBox rightLeg = (CheckBox)findViewById(R.id.right_leg);
-
-
         if (head.isChecked() && leftArm.isChecked() && rightArm.isChecked() && back.isChecked() && leftLeg.isChecked() && rightLeg.isChecked()) {
             if(allCheckedCount==0)
                 goodAnswer++;
-
             nextToLastView(v, "adom", goodAnswer);
-
-
         }
         else {
             Toast.makeText(this,"Sorry, this is not the correct answer. Try it again!", Toast.LENGTH_SHORT).show();
@@ -75,7 +68,6 @@ public class SeventhQuestion extends AppCompatActivity {
             rightLeg.setChecked(false);
             allCheckedCount++;
         }
-
     }
 
     private void nextToLastView(View v, String name, int value) {

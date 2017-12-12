@@ -15,7 +15,6 @@ import android.widget.Toast;
  */
 
 public class SecondQuestion extends AppCompatActivity {
-
     private int goodAnswer;
     private int lukeLightSaberCheckedCount = 0;
 
@@ -27,8 +26,7 @@ public class SecondQuestion extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras!=null)
             goodAnswer = extras.getInt("adom");
-
-
+        //set fonttype
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),
                 "font/deathstar.otf");
         RadioButton blue = (RadioButton)findViewById(R.id.blue);
@@ -39,22 +37,17 @@ public class SecondQuestion extends AppCompatActivity {
         green.setTypeface(myTypeFace);
         Button next = (Button)findViewById(R.id.button_next);
         next.setTypeface(myTypeFace);
-
     }
 
     public void rightSecondQuestion(View v) {
         RadioButton blue = (RadioButton)findViewById(R.id.blue);
         RadioButton red = (RadioButton)findViewById(R.id.red);
         RadioButton green = (RadioButton)findViewById(R.id.green);
-
         if (green.isChecked()) {
            if(lukeLightSaberCheckedCount==0){
                 goodAnswer++;
-
            }
             nextToThirdQuestion(v, "adom", goodAnswer);
-
-
         }
         else {
             Toast.makeText(this,"Sorry, this is not the correct answer. Try it again!", Toast.LENGTH_SHORT).show();
@@ -63,7 +56,6 @@ public class SecondQuestion extends AppCompatActivity {
             green.setChecked(false);
             lukeLightSaberCheckedCount++;
         }
-
     }
 
     private void nextToThirdQuestion(View v, String name, int value) {

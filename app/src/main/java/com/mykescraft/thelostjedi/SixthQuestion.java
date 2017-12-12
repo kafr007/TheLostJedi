@@ -15,7 +15,6 @@ import android.widget.Toast;
  */
 
 public class SixthQuestion extends AppCompatActivity {
-
     private int goodAnswer;
     private int kitFistoCheckedCount = 0;
 
@@ -27,7 +26,7 @@ public class SixthQuestion extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras!=null)
             goodAnswer = extras.getInt("adom");
-
+        //set fonttype
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),
                 "font/deathstar.otf");
         RadioButton kitFisto = (RadioButton)findViewById(R.id.kit_fisto);
@@ -38,20 +37,16 @@ public class SixthQuestion extends AppCompatActivity {
         ploKoon.setTypeface(myTypeFace);
         Button next = (Button)findViewById(R.id.button_next);
         next.setTypeface(myTypeFace);
-
     }
 
     public void rightSixthQuestion(View v) {
         RadioButton kitFisto = (RadioButton)findViewById(R.id.kit_fisto);
         RadioButton maceWindu = (RadioButton)findViewById(R.id.mace_windu);
         RadioButton ploKoon = (RadioButton)findViewById(R.id.plo_koon);
-
         if (kitFisto.isChecked()) {
             if(kitFistoCheckedCount==0)
                 goodAnswer++;
-
             nextToSeventhQuestion(v, "adom", goodAnswer);
-
         }
         else {
             Toast.makeText(this,"Sorry, this is not the correct answer. Try it again!", Toast.LENGTH_SHORT).show();
@@ -60,7 +55,6 @@ public class SixthQuestion extends AppCompatActivity {
             ploKoon.setChecked(false);
             kitFistoCheckedCount++;
         }
-
     }
 
     private void nextToSeventhQuestion(View v, String name, int value) {

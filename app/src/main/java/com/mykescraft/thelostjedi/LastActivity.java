@@ -16,7 +16,6 @@ import android.widget.TextView;
  */
 
 public class LastActivity extends AppCompatActivity {
-
     private int goodAnswer;
 
     @Override
@@ -24,37 +23,29 @@ public class LastActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_last);
         Intent intent = getIntent();
+        //evaluation message and result
         Bundle extras = getIntent().getExtras();
-        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),
-                "font/deathstar.otf");
         if (extras!=null) {
             goodAnswer = extras.getInt("adom");
             TextView percent = (TextView)findViewById(R.id.percent);
             double result = goodAnswer/7.0*100.0;
-
             percent.setText("" + (int)result + "%");
-
             if (result>=0)
                 setTextEvaluation("My Padawan, I see you tried it, but you have to practice lot more to become a Jedi Master one day.", "#D84315");
-
-
             if (result>30)
                 setTextEvaluation("My Padawan, I see you tried it, but you have to practice more to become a Jedi Master one day.", "#FB8C00");
-
-
             if (result>60)
                 setTextEvaluation("My Padawan, I'am proud of you, you have to practice more, but you'll become a Jedi Master soon.", "#000000");
-
             if (result>80)
                 setTextEvaluation("My Padawan, I'am very proud of you. You'll become a Jedi Master very soon.", "#2E7D32");
-
         }
-
-
-
+        //set fonttype
+        Typeface myTypeFace = Typeface.createFromAsset(getAssets(),
+                "font/deathstar.otf");
         Button restart = (Button)findViewById(R.id.button_restart);
         restart.setTypeface(myTypeFace);
 
+        //navigate to myke's craft webpage
         TextView mykesCraft = (TextView)findViewById(R.id.mykescraft);
         mykesCraft.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,9 +54,6 @@ public class LastActivity extends AppCompatActivity {
                 startActivity(browser);
             }
         });
-
-
-
     }
 
     private void setTextEvaluation(String advice, String colorOfText){
@@ -73,14 +61,9 @@ public class LastActivity extends AppCompatActivity {
         evaluation.setText(advice);
         evaluation.setTextColor(Color.parseColor(colorOfText));
     }
-
+    //onClick restart button
    public void restart(View v){
        Intent intent = new Intent(this, FirstQuestion.class);
        startActivity(intent);
-
     }
-
-
-
-
 }

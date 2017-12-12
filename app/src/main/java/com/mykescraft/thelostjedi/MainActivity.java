@@ -15,25 +15,18 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private int goodAnswerFirst = 0;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         //set typeface
         Typeface mtypeFace = Typeface.createFromAsset(getAssets(),
                 "font/deathstar.otf");
-
         Button ok = (Button)findViewById(R.id.button_ok);
         ok.setTypeface(mtypeFace);
         Button next = (Button)findViewById(R.id.button_next);
         next.setTypeface(mtypeFace);
-
-
-
     }
-
     //ok button click
     public void ok(View v){
         TextView introduction = (TextView) findViewById(R.id.introduction);
@@ -41,15 +34,10 @@ public class MainActivity extends AppCompatActivity {
         String introductionText = "Hello " + name + " Padawan!\nYou\'ve lost in a dark forest. You have to answer 7 questions correctly and you will find your way out of the forest. \nYou\'re Master will evaluate your performance. It is a good answer, if you give it for the first time. \nLet\'s start it!\nMay the force be with you!";
         introduction.setText(introductionText);
         introduction.setTextColor(Color.parseColor("#FFD700"));
-
     }
 
     public void nextToFirstQuestion(View v){
         Intent intent = new Intent(this, FirstQuestion.class);
         startActivity(intent);
-
            }
-
-
-
 }

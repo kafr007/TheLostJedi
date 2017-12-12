@@ -15,7 +15,6 @@ import android.widget.Toast;
  */
 
 public class ThirdQuestion extends AppCompatActivity {
-
     private int goodAnswer;
     private int chrystalCheckedCount = 0;
 
@@ -27,7 +26,7 @@ public class ThirdQuestion extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras!=null)
             goodAnswer = extras.getInt("adom");
-
+        //set fonttype
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),
                 "font/deathstar.otf");
         RadioButton focusingLens = (RadioButton)findViewById(R.id.focusing_lens);
@@ -38,20 +37,16 @@ public class ThirdQuestion extends AppCompatActivity {
         energyCell.setTypeface(myTypeFace);
         Button next = (Button)findViewById(R.id.button_next);
         next.setTypeface(myTypeFace);
-
     }
 
     public void rightThirdQuestion(View v) {
         RadioButton focusingLens = (RadioButton)findViewById(R.id.focusing_lens);
         RadioButton chrystal = (RadioButton)findViewById(R.id.chrystal);
         RadioButton energyCell = (RadioButton)findViewById(R.id.energy_cell);
-
         if (chrystal.isChecked()) {
             if(chrystalCheckedCount==0)
                 goodAnswer++;
-
             nextToFourthQuestion(v, "adom", goodAnswer);
-
         }
         else {
             Toast.makeText(this,"Sorry, this is not the correct answer. Try it again!", Toast.LENGTH_SHORT).show();
@@ -60,7 +55,6 @@ public class ThirdQuestion extends AppCompatActivity {
             energyCell.setChecked(false);
             chrystalCheckedCount++;
         }
-
     }
 
     private void nextToFourthQuestion(View v, String name, int value) {

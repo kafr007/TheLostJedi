@@ -13,7 +13,6 @@ import android.widget.Toast;
 import java.io.Console;
 
 public class FirstQuestion extends AppCompatActivity {
-
     private int goodAnswer;
     private int jediKnightCheckedCount = 0;
 
@@ -22,7 +21,7 @@ public class FirstQuestion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main1);
         Intent intent = getIntent();
-
+        //set fonttype
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),
                 "font/deathstar.otf");
         RadioButton jediKnight = (RadioButton)findViewById(R.id.jedi_knight);
@@ -33,10 +32,7 @@ public class FirstQuestion extends AppCompatActivity {
         jediSentinel.setTypeface(myTypeFace);
         Button next = (Button)findViewById(R.id.button_next);
         next.setTypeface(myTypeFace);
-
-
-
-    }
+     }
 
     public void rightFirstQuestion(View v) {
         RadioButton jediKnight = (RadioButton)findViewById(R.id.jedi_knight);
@@ -46,9 +42,8 @@ public class FirstQuestion extends AppCompatActivity {
         if (jediKnight.isChecked()) {
             if(jediKnightCheckedCount==0) {
                 goodAnswer++;
-                            }
+            }
             nextToSecondQuestion(v, "adom", goodAnswer);
-
         }
 
         else {
@@ -58,7 +53,6 @@ public class FirstQuestion extends AppCompatActivity {
             jediSentinel.setChecked(false);
             jediKnightCheckedCount++;
         }
-
     }
 
     private void nextToSecondQuestion(View v, String name, int value){

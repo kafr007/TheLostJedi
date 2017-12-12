@@ -15,7 +15,6 @@ import android.widget.Toast;
  */
 
 public class FourthQuestion extends AppCompatActivity {
-
     private int goodAnswer;
     private int shiiChoCheckedCount = 0;
 
@@ -27,7 +26,7 @@ public class FourthQuestion extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras!=null)
             goodAnswer = extras.getInt("adom");
-
+        //set fonttype
         Typeface myTypeFace = Typeface.createFromAsset(getAssets(),
                 "font/deathstar.otf");
         RadioButton ataru = (RadioButton)findViewById(R.id.ataru);
@@ -38,21 +37,16 @@ public class FourthQuestion extends AppCompatActivity {
         makashi.setTypeface(myTypeFace);
         Button next = (Button)findViewById(R.id.button_next);
         next.setTypeface(myTypeFace);
-
     }
 
     public void rightFourthQuestion(View v) {
         RadioButton ataru = (RadioButton)findViewById(R.id.ataru);
         RadioButton shiiCho = (RadioButton)findViewById(R.id.shii_cho);
         RadioButton makashi = (RadioButton)findViewById(R.id.makashi);
-
         if (shiiCho.isChecked()) {
            if(shiiChoCheckedCount==0)
                     goodAnswer++;
-
             nextToFifthQuestion(v, "adom", goodAnswer);
-
-
         }
         else {
             Toast.makeText(this,"Sorry, this is not the correct answer. Try it again!", Toast.LENGTH_SHORT).show();
@@ -61,7 +55,6 @@ public class FourthQuestion extends AppCompatActivity {
             makashi.setChecked(false);
             shiiChoCheckedCount++;
         }
-
     }
 
     private void nextToFifthQuestion(View v, String name, int value) {
