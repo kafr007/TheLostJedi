@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="@dimen/padding_medium"
     tools:context="com.mykescraft.thelostjedi.MainActivity"
     android:orientation="vertical"
     android:background="#000000">
@@ -17,20 +17,20 @@
         android:textColorHint="#FFD700"
         android:textColor="@color/starWarsYellow"
         android:inputType="textCapWords"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="@dimen/padding_medium"
         android:fontFamily="@font/deathstar"
         />
 
     <Button
         android:id="@+id/button_ok"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/padding_medium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ok"
         android:background="@color/buttonBackground"
         android:textColor="@color/starWarsYellow"
         android:onClick="ok"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="@dimen/padding_small"
         android:fontFamily="@font/deathstar"
         />
 
@@ -57,7 +57,7 @@
 
     <Button
         android:id="@+id/button_next"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/padding_medium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/next"

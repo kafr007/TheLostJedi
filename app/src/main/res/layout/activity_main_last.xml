@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
+    android:padding="@dimen/padding_medium"
     tools:context="com.mykescraft.thelostjedi.LastActivity"
     android:orientation="vertical"
     android:background="#F5F5F5">
@@ -15,9 +15,9 @@
         android:layout_height="wrap_content"
         android:text="@string/result"
         android:textColor="@color/colorPrimaryDark"
-        android:layout_marginTop="32dp"
-        android:layout_marginBottom="8dp"
-        android:textSize="18sp"
+        android:layout_marginTop="@dimen/padding_large"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:textSize="@dimen/fontsize"
         android:fontFamily="@font/deathstar"
         android:gravity="center_horizontal"
         />
@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         android:text="@string/percent"
         android:textColor="@color/colorPrimaryDark"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/padding_medium"
         android:textSize="32sp"
         android:fontFamily="@font/deathstar"
         android:gravity="center_horizontal"/>
@@ -39,8 +39,8 @@
         android:layout_height="wrap_content"
         android:text="@string/percent"
         android:textColor="@color/colorPrimaryDark"
-        android:layout_marginTop="16dp"
-        android:textSize="18sp"
+        android:layout_marginTop="@dimen/padding_medium"
+        android:textSize="@dimen/fontsize"
         android:fontFamily="@font/deathstar"
         android:gravity="center_horizontal"
         />
@@ -55,7 +55,7 @@
 
     <Button
         android:id="@+id/button_restart"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="@dimen/padding_medium"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/restart"
@@ -71,19 +71,7 @@
         android:layout_height="wrap_content"
         android:text="@string/thank_you"
         android:textColor="@color/colorPrimaryDark"
-        android:layout_marginTop="8dp"
-        android:textSize="10sp"
-        android:fontFamily="@font/deathstar"
-        android:gravity="center_horizontal"
-        />
-
-    <TextView
-        android:id="@+id/fenykardvivoklub"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/fenykardvivoklub"
-        android:textColor="@color/colorPrimaryDark"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/padding_small"
         android:textSize="10sp"
         android:fontFamily="@font/deathstar"
         android:gravity="center_horizontal"
@@ -95,7 +83,7 @@
         android:layout_height="wrap_content"
         android:text="@string/mykes_craft"
         android:textColor="@color/colorPrimaryDark"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/padding_small"
         android:textSize="10sp"
         android:fontFamily="@font/deathstar"
         android:gravity="center_horizontal"
