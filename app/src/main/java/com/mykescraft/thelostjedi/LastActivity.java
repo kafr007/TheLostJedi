@@ -42,10 +42,10 @@ public class LastActivity extends AppCompatActivity {
 
 
             if (result>60)
-                setTextEvaluation("My Padawan, I'am proud of you, you have to practice more, but you become a Jedi Master soon.", "#000000");
+                setTextEvaluation("My Padawan, I'am proud of you, you have to practice more, but you'll become a Jedi Master soon.", "#000000");
 
             if (result>80)
-                setTextEvaluation("My Padawan, I'am very proud of you. You become a Jedi Master very soon.", "#2E7D32");
+                setTextEvaluation("My Padawan, I'am very proud of you. You'll become a Jedi Master very soon.", "#2E7D32");
 
         }
 
