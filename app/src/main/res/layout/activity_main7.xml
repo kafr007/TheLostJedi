@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/seventh_question"
-        android:textColor="#FFD700"
+        android:textColor="@color/starWarsYellow"
         android:layout_marginBottom="8dp"
         android:textSize="18sp"
         android:fontFamily="@font/deathstar"
@@ -34,8 +34,8 @@
         android:layout_height="wrap_content"
         android:text="@string/head"
         android:layout_marginBottom="8dp"
-        android:background="#FFFFFF"
-        android:textColor="#000000"
+        android:background="@color/colorPrimaryWhite"
+        android:textColor="@color/colorPrimaryDark"
         android:fontFamily="@font/deathstar"
         />
 
@@ -45,8 +45,8 @@
         android:layout_height="wrap_content"
         android:text="@string/right_arm"
         android:layout_marginBottom="8dp"
-        android:background="#FFFFFF"
-        android:textColor="#000000"
+        android:background="@color/colorPrimaryWhite"
+        android:textColor="@color/colorPrimaryDark"
         android:fontFamily="@font/deathstar"
         />
 
@@ -56,8 +56,8 @@
         android:layout_height="wrap_content"
         android:text="@string/left_arm"
         android:layout_marginBottom="8dp"
-        android:background="#FFFFFF"
-        android:textColor="#000000"
+        android:background="@color/colorPrimaryWhite"
+        android:textColor="@color/colorPrimaryDark"
         android:fontFamily="@font/deathstar"
         />
     <CheckBox
@@ -66,8 +66,8 @@
         android:layout_height="wrap_content"
         android:text="@string/back"
         android:layout_marginBottom="8dp"
-        android:background="#FFFFFF"
-        android:textColor="#000000"
+        android:background="@color/colorPrimaryWhite"
+        android:textColor="@color/colorPrimaryDark"
         android:fontFamily="@font/deathstar"
         />
 
@@ -77,8 +77,8 @@
         android:layout_height="wrap_content"
         android:text="@string/right_leg"
         android:layout_marginBottom="8dp"
-        android:background="#FFFFFF"
-        android:textColor="#000000"
+        android:background="@color/colorPrimaryWhite"
+        android:textColor="@color/colorPrimaryDark"
         android:fontFamily="@font/deathstar"
         />
 
@@ -88,8 +88,8 @@
         android:layout_height="wrap_content"
         android:text="@string/left_leg"
         android:layout_marginBottom="8dp"
-        android:background="#FFFFFF"
-        android:textColor="#000000"
+        android:background="@color/colorPrimaryWhite"
+        android:textColor="@color/colorPrimaryDark"
         android:fontFamily="@font/deathstar"
         />
 
@@ -100,8 +100,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/next"
-        android:background="#006064"
-        android:textColor="#FFD700"
+        android:background="@color/buttonBackground"
+        android:textColor="@color/starWarsYellow"
         android:onClick="rightSeventhQuestion"
         android:fontFamily="@font/deathstar"
         />

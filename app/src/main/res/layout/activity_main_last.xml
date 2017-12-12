@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/result"
-        android:textColor="#000000"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="8dp"
         android:textSize="18sp"
@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/percent"
-        android:textColor="#000000"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_marginTop="16dp"
         android:textSize="32sp"
         android:fontFamily="@font/deathstar"
@@ -38,7 +38,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/percent"
-        android:textColor="#000000"
+        android:textColor="@color/colorPrimaryDark"
         android:layout_marginTop="16dp"
         android:textSize="18sp"
         android:fontFamily="@font/deathstar"
@@ -59,12 +59,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/restart"
-        android:background="#006064"
-        android:textColor="#FFD700"
+        android:background="@color/buttonBackground"
+        android:textColor="@color/starWarsYellow"
         android:onClick="restart"
         android:fontFamily="@font/deathstar"
         />
 
+    <TextView
+        android:id="@+id/thank_you"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/thank_you"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="8dp"
+        android:textSize="10sp"
+        android:fontFamily="@font/deathstar"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/fenykardvivoklub"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fenykardvivoklub"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="8dp"
+        android:textSize="10sp"
+        android:fontFamily="@font/deathstar"
+        android:gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/mykescraft"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mykes_craft"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginTop="8dp"
+        android:textSize="10sp"
+        android:fontFamily="@font/deathstar"
+        android:gravity="center_horizontal"
+        />
 
 
 </LinearLayout>

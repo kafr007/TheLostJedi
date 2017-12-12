@@ -14,7 +14,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/third_question"
-        android:textColor="#FFD700"
+        android:textColor="@color/starWarsYellow"
         android:layout_marginBottom="8dp"
         android:textSize="18sp"
         android:fontFamily="@font/deathstar"
@@ -40,9 +40,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/focusing_lens"
-            android:textColor="#000000"
+            android:textColor="@color/colorPrimaryDark"
             android:layout_marginBottom="8dp"
-            android:background="#FFFFFF"
+            android:background="@color/colorPrimaryWhite"
             android:fontFamily="@font/deathstar"
 
             />
@@ -52,9 +52,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/chrystal"
-            android:textColor="#000000"
+            android:textColor="@color/colorPrimaryDark"
             android:layout_marginBottom="8dp"
-            android:background="#FFFFFF"
+            android:background="@color/colorPrimaryWhite"
             android:fontFamily="@font/deathstar"
             />
 
@@ -63,8 +63,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/energy_cell"
-            android:textColor="#000000"
-            android:background="#FFFFFF"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@color/colorPrimaryWhite"
             android:fontFamily="@font/deathstar"
 
             />
@@ -77,8 +77,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/next"
-        android:background="#006064"
-        android:textColor="#FFD700"
+        android:background="@color/buttonBackground"
+        android:textColor="@color/starWarsYellow"
         android:onClick="rightThirdQuestion"
         android:fontFamily="@font/deathstar"
         />
