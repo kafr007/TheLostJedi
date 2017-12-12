@@ -34,18 +34,18 @@ public class LastActivity extends AppCompatActivity {
             percent.setText("" + (int)result + "%");
 
             if (result>=0)
-                setTextEvaluation("My Padawan, I see you tried it, but you have to practice lot more to become a Jedi Master one day.", "red");
+                setTextEvaluation("My Padawan, I see you tried it, but you have to practice lot more to become a Jedi Master one day.", "#D84315");
 
 
             if (result>30)
-                setTextEvaluation("My Padawan, I see you tried it, but you have to practice more to become a Jedi Master one day.", "red");
+                setTextEvaluation("My Padawan, I see you tried it, but you have to practice more to become a Jedi Master one day.", "#FB8C00");
 
 
             if (result>60)
-                setTextEvaluation("My Padawan, I'am proud of you, you have to practice more, but you become a Jedi Master soon.", "black");
+                setTextEvaluation("My Padawan, I'am proud of you, you have to practice more, but you become a Jedi Master soon.", "#000000");
 
             if (result>80)
-                setTextEvaluation("My Padawan, I'am very proud of you. You become a Jedi Master very soon.", "green");
+                setTextEvaluation("My Padawan, I'am very proud of you. You become a Jedi Master very soon.", "#2E7D32");
 
         }
 

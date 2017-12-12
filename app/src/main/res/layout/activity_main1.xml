@@ -16,6 +16,7 @@
         android:text="@string/first_question"
         android:textColor="#FFFF8D"
         android:layout_marginBottom="8dp"
+        android:layout_marginTop="32dp"
         android:textSize="18sp"
         android:fontFamily="@font/deathstar"
         />
