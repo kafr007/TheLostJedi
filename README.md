@@ -1,3 +1,3 @@
 # TheLostJedi
 
-This is a quizapplication about lightsaber combat. 
+This is a quizapplication for Android about lightsaber combat. 
